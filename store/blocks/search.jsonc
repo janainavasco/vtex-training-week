@@ -1,5 +1,9 @@
 {
   "store.search": {
+    "parent": {
+      "header": "header-layout.desktop",
+      "footer": "footer-layout.desktop"
+    },
     "blocks": [
       "search-result-layout"
     ]
@@ -17,10 +21,24 @@
       "search-title.v2",
       "total-products.v2",
       "order-by.v2",
-      "search-fetch-previous",
-      "search-content",
-      "filter-navigator.v3",
+      "search-fetch-previous",      
+      "flex-layout.row#custom-layout",
       "search-fetch-more"
+    ]
+  },
+  "flex-layout.row#custom-layout": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "colSizing": "auto",
+      "colJustify": "around"
+    },
+    "children": [
+      "filter-navigator.v3",
+      "search-content"
     ]
   }
 }
