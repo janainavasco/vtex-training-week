@@ -33,6 +33,9 @@
     ]
   },
   "flex-layout.row#custom-top": {
+    "props": {
+      "blockClass": "top-content"
+    },
     "children": [ 
       "total-products.v2",
       "order-by.v2"
@@ -41,7 +44,8 @@
   "flex-layout.row#custom-layout": {
     "props": {
       "preventHorizontalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "custom-filter"
     },
     "children": [
       "filter-navigator.v3",
